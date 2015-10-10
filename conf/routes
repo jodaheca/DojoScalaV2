@@ -1,0 +1,11 @@
+# Routes
+# Archivo en el cual se definen todas las rutas del Proyecto
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index
+POST    /Person                     controllers.Application.addPerson
+GET     /Person                     controllers.Application.getPerson
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
